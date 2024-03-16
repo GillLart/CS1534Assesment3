@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
-<body>
-#banner
-#nav bar
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<head>
 
+  <meta charset="utf8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <!--am using an old banner from previous project as a place holder-->
+<img src="hd banner.png" alt="A temp banner" class="center">
+
+<!--index widgets-->
+<div id="test 2" class="center">
+<a href = "index.html"> 
+  <img onmouseover="big(this)" onmouseout="normal(this)" src = "index graphic.png" width=20% height = 20% id="test" >
+</a>
+
+<a href = "Home.html"> 
+  <img onmouseover="big(this)" onmouseout="normal(this)" src = "index graphic.png" width=20% height = 20% >
+</a>
+
+<a href = "History.html"> 
+  <img onmouseover="big(this)" onmouseout="normal(this)" src = "index graphic.png" width=20% height = 20% >
+</a>
+
+<a href = "Visit.html"> 
+  <img onmouseover="big(this)" onmouseout="normal(this)" src = "index graphic.png" width=20% height = 20% >
+</a>
+</div>
+
+
+
+
+
+<script>
+function big(x) {
+  x.style.height = "15%";
+  x.style.width = "15%";
+}
+
+function normal(x) {
+  x.style.width = "20%"
+  x.style.height = "20%";
+}
+</script>
 </body>
 </html>
