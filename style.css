@@ -32,7 +32,9 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
-
+#banner{
+  padding-top: 20px;
+}
 .center {
   display: block;
   margin-left: auto;
