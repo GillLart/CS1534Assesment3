@@ -35,13 +35,16 @@ Design
 Wire frames:
 
 - index.html
-
+<img src="Img/indexP">
 
 - Home.html
+<img src="Img/homeP">
 
 - History.html
+<img  src="Img/historyP">
 
 - Visit.html
+<img src="Img/VisitP">
 
 Evaluation
 
