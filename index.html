@@ -5,6 +5,8 @@
 
   <meta charset="utf8">
   <title></title>
+
+  <!--to make sure bootstrap works and that page is connecte to the css-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,50 +23,61 @@
     </ul>
   </div>
 
-    <!--am using an old banner from previous project as a place holder-->
+    <!--am using The Edinburgh banner-->
   <header><img src="Img/EdinburghBanner.png" alt="banner" class="center" id="banner"></header>
+ 
  <!--index widgets-->
-
-  <div class="cf">
+ <!-- for index-->
+  <div>
     <a href = "index.html"> 
-      <img class="image" onmouseover="big(this)" onmouseout="normal(this)" src = "Img/index graphic.png" width=40% height =40% />
+      <img class="image" onmouseover="small(this)" onmouseout="normal(this)" src = "Img/index graphic.png" width=40% height =40% />
     </a>
+    <!-- for inex description-->
       <div class="text">The Index page: The current page. You can use this page <br> to acess all of the pages within this website.</div>
 
   </div>
 
-  <div class="cf">
+  <!-- for home-->
+  <div>
     <a href = "Home.html"> 
-      <img class="image" onmouseover="big(this)" onmouseout="normal(this)" src = "Img/homeicon.png" width=40% height =40%  />
+      <img class="image" onmouseover="small(this)" onmouseout="normal(this)" src = "Img/homeicon.png" width=40% height =40%  />
     </a>
+    <!-- for home description-->
       <div class="text">The Home page: You can use this page to view a map of <br> and general information about Edinbrugh. </div>
 
   </div>
 
-  <div class="cf">
+  <!-- for history-->
+  <div>
     <a href = "History.html"> 
-      <img class="image" onmouseover="big(this)" onmouseout="normal(this)" src = "Img/historyicon.png" width=40% height =40% />
+      <img class="image" onmouseover="small(this)" onmouseout="normal(this)" src = "Img/historyicon.png" width=40% height =40% />
     </a>
+    <!-- for history description-->
       <div class="text">The History page: You can use this page to view background <br> information about Edinbrughs past through a timeline.</div>
 
   </div>
 
-  <div class="cf">
+  <!-- for visit-->
+  <div>
     <a href = "Visit.html"> 
-      <img class="image" onmouseover="big(this)" onmouseout="normal(this)" src = "Img/visiticon.png" width=40% height =40%  />
+      <img class="image" onmouseover="small(this)" onmouseout="normal(this)" src = "Img/visiticon.png" width=40% height =40%  />
     </a>
+     <!-- for visit description-->
       <p class="text">The Visit page: You can use this page to view information <br>
       on places to visit and essential experiences for tourists </p>
 
   </div>
 
-
+<!--javascript-->
+  
+  <!--when activated makes object small-->
   <script>
-  function big(x) {
+  function small(x) {
     x.style.height = "35%";
     x.style.width = "35%";
   }
 
+  //when activated makes object return to original size
   function normal(x) {
     x.style.width = "40%"
     x.style.height = "40%";

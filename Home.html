@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf8">
     <title></title>
+    <!--to make sure bootstrap works and that page is connecte to the css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    
     <link rel="stylesheet" href="style.css">
 
@@ -25,20 +26,21 @@
       </ul>
     </div>
 
-      <!--am using Edinburgh banner-->
+    <!--am using Edinburgh banner-->
     <header><img src="Img/EdinburghBanner.png" alt="banner" class="center" id="banner"></header>
-    <!--Location Map: Add a static map from Open Street 
-    #Map on the home page to show the town’s location.
-    #town description-->
     <h1>Welcome to Edinburgh</h1>
+
     <div>
+      <!--town description-->
       <div class ="text">The capital of Scotland captivates visitors<br> with its plentiful history, culture,<br> and nature. It's located next to<br> the coastline of the North<br> Sea and the flowing hills of the Scottish<br> lowlands. It is filled with cobbled<br> streets and dotted with ancient archways<br> but still manages to remain modern<br> and lively by integrating its<br> new and old architecture. It is<br> lined with charming markets,<br> pubs, and ghost stories so<br> you are sure to find something<br> to your fancy in the city of Edinburgh.<br> You can click on this link to view the map in open street map:</div>
+      <!--ading Location Map: astatic map from Open Street Map on the home page to show the town’s location.-->
       <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.5980224609375%2C55.81247160321216%2C-2.9553222656250004%2C56.08966099959165&amp;layer=mapnik" style="border: 1px solid black;margin-left:20vw;float:left;"></iframe><br/>
       <small class ="text" ><a href="https://www.openstreetmap.org/#map=11/55.9513/-3.2767">View Larger Map</a></small>
     </div>
-
+<!-- javascript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+
+<!--makes sure map is displayed properly-->
   <script>
     var map = S.map('map').setView([55.9335, -3.2427], 11);
     S.tileLayer("htts://{s}.tile.opendtreetmap.org/{z}/{x}/{y}.png").addTo(map)

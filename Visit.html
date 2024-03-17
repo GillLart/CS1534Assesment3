@@ -9,12 +9,13 @@
   <head>
     <meta charset="utf8">
     <title></title>
+
+  <!--to make sure bootstrap works and that page is connecte to the css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">  
   </head>
 
   <body>
-     <!--banner-->
      <!--nav bar-->
     <ul class="navbar">
     <li><a href="index.html">Index</a></li>
@@ -22,13 +23,14 @@
     <li><a href="History.html">History</a></li>
     <li><a class="active" href="Visit.html">Visit</a></li>
    </ul>
-
+    <!--banner-->
    <header><img src="Img/EdinburghBanner.png" alt="banner" class="center" id="banner"></header>
 
     <h1>Essential Experiences in Edinbrugh<h1>
-    <!--essential experiences-->
+    <!--essential experiences clickable pictures-->
      <div class="container">
       <div>
+        <!--makes sure that the images have a ratio of 7 using bootstrap-->
         <div class = col-md-7 width =>
           <img onmouseover = "small(this)" onclick="info(this)" onmouseout="normal(this)" src="Img/ArthursS.jpg" class="imgTest">
           <img onmouseover = "small(this)" onclick="info1(this)" onmouseout="normal(this)" src="Img/castle.jpg" class="imgTest">
@@ -39,6 +41,7 @@
 
         </div>
 
+        <!--makes sure that the text have a ratio of 5 using bootstrap-->
         <div class = col-md-5 >
           <p class="txt" id="demo">Arthur's Seat: An ancient volcanco near the centre of Edinburgh. A moderately challenging walk to the summit will be met with beautiful views that make it more than worth it.<br>P.S: click on any of these photos to find out more about essential experiences</p>
 
@@ -46,51 +49,59 @@
       </div>
      </div>
 
-
+<!--javascript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-  
+    
+  //displays info for Arthurs seat
   function info(x) {
     x.style.height = "12vw";
     x.style.width = "10vw";
     document.getElementById("demo").innerHTML = "Arthur's Seat: An ancient volcanco near the centre of Edinburgh. A moderately challenging walk to the summit will be met with beautiful views that make it more than worth it.";
   }
 
+   //displays info for Jupiter Art Land
   function info1(x) {
     x.style.height = "12vw";
     x.style.width = "10vw";
-    document.getElementById("demo").innerHTML = "Edinburgh Castle: Located at the top of Castle walk. A Visit here will be filled with historical intrigue as well as wonderful views of Edinbrugh. whether you are a history buff or finder of breath-takeing views a visit to the Castle of Edinbrugh is a must.";
+    document.getElementById("demo").innerHTML = "Jupiter Art LandJupiter Art Land: Located at the top of Castle walk. A Visit here will be filled with historical intrigue as well as wonderful views of Edinbrugh. whether you are a history buff or finder of breath-takeing views a visit to the Castle of Edinbrugh is a must.";
   }
 
+   //displays info for Jupiter Art Land
   function info2(x) {
     x.style.height = "12vw";
     x.style.width = "10vw";
     document.getElementById("demo").innerHTML = "Jupiter Art Land: Just outside of Edinburgh, a vast bastion oof nature scattred with works of art. It offers a combination of tranquility and creativity making it perfect for art enthusiasts and nature lovers.";
   }
 
+  //displays info for Victoria Street
   function info3(x) {
     x.style.height = "12vw";
     x.style.width = "10vw";
     document.getElementById("demo").innerHTML = "Victoria Street: Its vibrant atmosphere and charming architecture. In the heart of Edinburgh's Old Town, this cobblestone street offers a delightful blend of boutiques, cafes, and colorful facades. A stroll along Victoria Street promises an unforgettable experience.";
   }
 
+  //displays info for The Scottish National Gallery
   function info4(x) {
     x.style.height = "12vw";
     x.style.width = "10vw";
     document.getElementById("demo").innerHTML = "The Scottish National Gallery: Immerse yourself in a world of masterpieces. Near the centre of Edinburgh, this gallery houses a remarkable collection of Scottish and international art spanning centuries. Each exhibit offers a glimpse into the beauty of artistic expression. A visit to the Scottish National Gallery promises inspiration.";
   }
 
+  //displays info for The National Museum of Scotland
   function info5(x) {
     x.style.height = "12vw";
     x.style.width = "10vw";
     document.getElementById("demo").innerHTML = "The National Museum of Scotland: A captivating journey through Scotland's rich history and diverse culture. Located in Edinburgh's historic Old Town, this museum showcases exhibits ranging from natural history to world cultures, there's something to pique the interest of every visitor. A trip to the National Museum of Scotland promises an enriching experience for all ages.";
   }
 
+  //makes object small
   function small(x) {
     x.style.height = "12vw";
     x.style.width = "10vw";
   }
 
+  //returns object to normal state
   function normal(x) {
     x.style.width = "12vw"
     x.style.height = "14vw";
