@@ -54,7 +54,7 @@ img {
 .text {
     display: inline-block;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 1vw;
     padding-left: 5%;
     color: #f7d8ac;
    
@@ -64,5 +64,38 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+  text-align: center;
+  margin-bottom:1vw;
+}
+.imgTest{
+  width:12vw;
+  height:14vw;
+  margin-left:1vw;
+  padding-bottom: 3vw;
+  float:left;
 }
 
+.txt{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2vw;
+  text-align: left;
+  color: #f7d8ac;
+}
+h1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #f7d8ac;
+}
+
+.map{
+
+  margin-left:10vw;
+  margin-bottom:3vw;
+  margin-top:3vw;
+  height: 30vw;
+  width: 50vw
+
+}

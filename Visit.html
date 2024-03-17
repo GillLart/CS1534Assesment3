@@ -25,21 +25,74 @@
 
    <header><img src="EdinburghBanner.png" alt="A temp banner" class="center" id="banner"></header>
 
-    <h1 class = "text">essential experiences in Edinbrugh<h1>
-    <!--essential experiences--><!--
+    <h1>Essential Experiences in Edinbrugh<h1>
+    <!--essential experiences-->
      <div class="container">
-     <div class="row">
-      <div class = col-md-7>
+      <div>
+        <div class = col-md-7 >
+          <img id="img1" onclick="info(this)" onmouseout="normal(this)" src="temp.png" alt="A temp img" class="imgTest" id="img1">
+          <img onclick="info1(this)" onmouseout="normal(this)" src="temp.png" alt="A temp img" class="imgTest" id="img2">
+          <img onclick="info2(this)" onmouseout="normal(this)" src="temp.png" alt="A temp img" class="imgTest" >
+          <img onclick="info3(this)" onmouseout="normal(this)" src="temp.png" alt="A temp img" class="imgTest" >
+          <img onclick="info4(this)" onmouseout="normal(this)" src="temp.png" alt="A temp img" class="imgTest" >
+          <img onclick="info5(this)" onmouseout="normal(this)" src="temp.png" alt="A temp img" class="imgTest" >
 
-      </div>
+        </div>
 
-      <div class = "col-md-5">
+        <div class = col-md-5 >
+          <p class="txt" id="demo">words words words words words words 
+            <br>words words words words words words 
+            <br>words words words words words words 
+            <br>words words words words words words 
+            <br>words words words words words words</p>
 
+        </div>
       </div>
      </div>
-     </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  function info(x) {
+    x.style.height = "12vw";
+    x.style.width = "10vw";
+    document.getElementById("demo").innerHTML = "Good day";
+  }
+
+  function info1(x) {
+    x.style.height = "12vw";
+    x.style.width = "10vw";
+    document.getElementById("demo").innerHTML = "diff info";
+  }
+
+  function info2(x) {
+    x.style.height = "12vw";
+    x.style.width = "10vw";
+    document.getElementById("demo").innerHTML = "more info";
+  }
+
+  function info3(x) {
+    x.style.height = "12vw";
+    x.style.width = "10vw";
+    document.getElementById("demo").innerHTML = "more info2";
+  }
+
+  function info4(x) {
+    x.style.height = "12vw";
+    x.style.width = "10vw";
+    document.getElementById("demo").innerHTML = "more info3";
+  }
+
+  function info5(x) {
+    x.style.height = "12vw";
+    x.style.width = "10vw";
+    document.getElementById("demo").innerHTML = "more info4";
+  }
+
+  function normal(x) {
+    x.style.width = "12vw"
+    x.style.height = "14vw";
+  }
+  </script>
   </body>
 
 </html>

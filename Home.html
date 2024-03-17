@@ -25,7 +25,27 @@
     <!--Location Map: Add a static map from Open Street 
     #Map on the home page to show the town’s location.
     #town description-->
-    <p class = "text">Edinbrugh description</p>
+    <h1>Welcome to Edinburgh</h1>
+
+    <a href = "https://www.openstreetmap.org/export#map=12/55.9397/-3.2097"> 
+      <img class = "map" onmouseover="small(this)" onmouseout="normal(this)" src = "mapofEdin.png"/ >
+    </a>
+    <div class="text">The Index page: The current page.<br> You can use this page <br> to acess all of the pages within this<br> website.The Index page: The current page. <br>You can use this page <br> to acess all of the pages within this<br> websiteThe Index page: The current page.<br> You can use this page <br> to acess all of the pages within this<br> The Index page: The current page.<br> You can use this page <br> to acess all of the pages within this<br>you can click on this map to view it in open street map</div>
+
+
+  
+    <script>
+    function small(x) {
+      x.style.height = "25vw";
+      x.style.width = "45vw";
+    }
+
+    function normal(x) {
+      x.style.width = "50vw";
+      x.style.height = "30vw";
+    }
+    </script>
+
   </body>
 
 </html>
